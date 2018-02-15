@@ -8,7 +8,7 @@ exports.upload = function(request, response) {
         fs.renameSync(files.upload.path, 'test.png');
         response.writeHead(200, {'Content-Type': 'text/html'});
         response.write('received image:<br/>');
-        response.write('<img src='/show' />');
+        response.write('<img src="/show" />');
         response.end();
     });
 }
